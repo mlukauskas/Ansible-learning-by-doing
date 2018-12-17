@@ -1,0 +1,7 @@
+---
+- name: Instalatio of PHP with different modues
+  yum: pkg={{ item }} state=latest
+  with_items:
+          - php
+          - php-pear
+          - php-mysql

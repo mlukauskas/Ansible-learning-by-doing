@@ -1,0 +1,11 @@
+# This is the ansible 'hosts' file.
+
+[lbserver]
+loadbalancer ansible_host=192.168.219.129
+
+[webservers]
+web01 ansible_host=192.168.219.130
+web02 ansible_host=192.168.219.131
+web03 ansible_host=192.168.219.132
+
+[databaseservers]

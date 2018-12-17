@@ -1,0 +1,6 @@
+---
+- name: Add EPEL Repo
+  yum: name=epel-release state=latest
+
+- name: System update
+  yum: name=* state=latest
